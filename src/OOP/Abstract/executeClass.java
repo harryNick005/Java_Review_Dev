@@ -1,5 +1,5 @@
 package OOP.Abstract;
-
+import OOP.Abstract.Animal;
 public class executeClass extends Animal{
     // Only extend to instance field (variables and methods) methodName plus .
     // All subclass (childClass) must contain/have constructor of superClass(parentClass)
@@ -11,7 +11,7 @@ public class executeClass extends Animal{
 
 
     @Override
-    public  boolean isShed(boolean shed){
+    public boolean isShed(boolean shed){
         return shed;
     }
 
@@ -26,12 +26,21 @@ public class executeClass extends Animal{
         System.out.println(executeClass.class.getName());
     }
 
+    public String nameOfClasses(Class<?> var ){
+      return var.getName();
+    }
+
+//    public <T extends Class> String nameOfClasses(T var ){
+//        return var.getName();
+//    }
+
 
     public static void main(String[] args) {
 
         executeClass executeClass=new executeClass("dog");
 
-//        executeClass.animalName="dog";
+
+//      executeClass.animalName="dog";
         System.out.println(executeClass.nameOfClass());
         System.out.println(executeClass.isShed(true));
         System.out.println(executeClass.sound("ow ow ow"));
@@ -39,6 +48,12 @@ public class executeClass extends Animal{
         Animal.staticDemo();
         System.out.println("=======================================================================");
         executeClass.nameOfClasses();
+        System.out.println("=======================================================================");
+        System.out.println(executeClass.nameOfClasses(executeClass.getClass()));
+        System.out.println(executeClass.nameOfClasses(Animal.class));
+        System.out.println(executeClass.nameOfClasses(String.class));
+        System.out.println(executeClass.nameOfClasses(Integer.class));
+
 
     }
 

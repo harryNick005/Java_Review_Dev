@@ -7,10 +7,13 @@ public void print(){
     System.out.println("Hello World");
 }
     public superPractice(){
-      this(123,"Name1");
+        this(001,"default User");
+        System.out.println("this is default constructor called");
+
     }
     public superPractice(Integer id,String name){
         this.id=id;
         this.name=name;
+        System.out.println("this is parameterized constructor called");
     }
 }

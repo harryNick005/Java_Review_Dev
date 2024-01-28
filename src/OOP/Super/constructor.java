@@ -16,7 +16,8 @@ public class constructor extends superPractice{
     }
 
     public static void main(String[] args) {
-        constructor constructor=new constructor(5,"name2",'M');
+       constructor defaultConstructor = new constructor();
+       constructor constructor=new constructor(5,"name2",'M');
         constructor.demo();
         System.out.println(constructor.id);
         System.out.println(constructor.name);
