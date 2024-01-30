@@ -1,0 +1,30 @@
+ OOP Concept  1. encapsulation 2. inheritance 3.abstraction  4.  Polymorphism
+
+ inheritance ===> 继承  extends （all instance member） (override)
+
+
+延用 === 母类 （parent 类） 成员 （member） ---> 1.变量（variable）2. 方法（method/function） 看到我的求了
+
+When inheriting from parent class, the relationship between parent(super) class and child(sub) class is "IS-A relationship"
+
+
+parent class  =====> car
+child  class  =====> brand (BMW,Audi, Benz)
+
+BMW  IS A car
+Audi IS A car
+Benz IS A car
+
+
+Upcasting: ParentClass objectName1 =new ChildClass();  Upcasting
+Downcasting: ChildClass ObjectName2=(ChildClass)objectName1;  Downcasting
+
+ChildClass object =new ParentClass();  compile error (classType cast error)
+
+
+Car audi=new Audi();
+
+Car audi =====> instance members that can be accessed. in this example all instances in Car class
+can be accessed.
+
+new Audi(); the implementation. (which method should be used)
