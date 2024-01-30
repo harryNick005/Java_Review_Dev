@@ -2,19 +2,26 @@ package Enum;
 
 public enum Person {
 
-    STUDENT("student"),
-    INSTRUCTOR("instructor"),
-    TA("ta"),
-    PROFESSOR("professor"),
-    ADMIN("adminPerson");
+    STUDENT("student","no access to system"),
+    TA("ta","would have temp access to BlackBoard "),
+    INSTRUCTOR("instructor","no access to system but access to BlackBoard"),
+
+    PROFESSOR("professor","partial access to BlackBoard "),
+    ADMIN("adminPerson","full access");
 
     public String typeOfPerson;
-    Person(String typeOfPerson){
+    public String specification;
+    Person(String typeOfPerson,String specification){
     this.typeOfPerson=typeOfPerson;
+    this.specification=specification;
     }
 
-    public String toString(){
-       return typeOfPerson;
+    @Override
+    public String toString() {
+        return "Person{" +
+                "typeOfPerson='" + typeOfPerson + '\'' +
+                ", specification='" + specification + '\'' +
+                '}';
     }
 
     public static void showMembers(){

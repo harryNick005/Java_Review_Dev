@@ -33,21 +33,26 @@ public class execute  {
 //            }
 
             switch (prsType){
-                case STUDENT:
-                    System.out.println("The person Type is: " + Person.STUDENT);
-                    break;
-                case PROFESSOR:
-                    System.out.println("The person Type is: " + Person.PROFESSOR);
-                    break;
-                case ADMIN:
-                    System.out.println("The person Type is: " + Person.ADMIN);
-                    break;
-                case INSTRUCTOR:
-                    System.out.println("The person Type is: " + Person.INSTRUCTOR);
-                    break;
-                case TA:
-                    System.out.println("The person Type is: " + Person.TA);
-                    break;
+                case STUDENT->{
+                    System.out.print("The person Type is: " + Person.STUDENT.typeOfPerson + " Accessibility: "+prsType.specification);
+                }
+                case PROFESSOR->{
+                    System.out.println("The person Type is: " + Person.PROFESSOR.typeOfPerson+ " Accessibility: "+prsType.specification);
+
+                }
+                case ADMIN->{
+                    System.out.println("The person Type is: " + Person.ADMIN.typeOfPerson+ " Accessibility: "+prsType.specification);
+                }
+
+                case INSTRUCTOR->{
+                    System.out.println("The person Type is: " + Person.INSTRUCTOR.typeOfPerson+ " Accessibility: "+prsType.specification);
+                }
+
+                case TA->{
+                    System.out.println("The person Type is: " + Person.TA.typeOfPerson+ " Accessibility: "+prsType.specification);
+                }
+
+
             }
 
         }
