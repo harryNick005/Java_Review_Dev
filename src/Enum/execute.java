@@ -16,16 +16,38 @@ public class execute  {
                 e.printStackTrace();
             }
         } else {
-            if (prsType.typeOfPerson.equalsIgnoreCase("student")) {
-                System.out.println("The person Type is: " + Person.STUDENT);
-            } else if (prsType.typeOfPerson.equalsIgnoreCase("professor")) {
-                System.out.println("The person Type is: " + Person.PROFESSOR);
-            } else if (prsType.typeOfPerson.equalsIgnoreCase("ta")) {
-                System.out.println("The person Type is: " + Person.TA);
-            } else if (prsType.typeOfPerson.equalsIgnoreCase("Instructor")) {
-                System.out.println("The person Type is: " + Person.INSTRUCTOR);
-            } else if (prsType.typeOfPerson.equalsIgnoreCase("admin")) {
-                System.out.println("The person Type is: " + Person.ADMIN);
+//            if (prsType.typeOfPerson.equalsIgnoreCase(Arrays.stream(Person.values()).filter(each->each.typeOfPerson.equals("student")).toList().get(0).toString())) {
+//                System.out.println("The person Type is: " + Person.STUDENT);
+//            }
+//            else if (prsType.typeOfPerson.equalsIgnoreCase(Arrays.stream(Person.values()).filter(each->each.typeOfPerson.equals("professor")).toList().get(0).toString())) {
+//                System.out.println("The person Type is: " + Person.PROFESSOR);
+//            }
+//            else if (prsType.typeOfPerson.equalsIgnoreCase(Arrays.stream(Person.values()).filter(each->each.typeOfPerson.equals("ta")).toList().get(0).toString())) {
+//                System.out.println("The person Type is: " + Person.TA);
+//            }
+//            else if (prsType.typeOfPerson.equalsIgnoreCase(Arrays.stream(Person.values()).filter(each->each.typeOfPerson.equals("instructor")).toList().get(0).toString())) {
+//                System.out.println("The person Type is: " + Person.INSTRUCTOR);
+//            }
+//            else if (prsType.typeOfPerson.equalsIgnoreCase(Arrays.stream(Person.values()).filter(each->each.typeOfPerson.equals("adminPerson")).toList().get(0).toString())) {
+//                System.out.println("The person Type is: " + Person.ADMIN);
+//            }
+
+            switch (prsType){
+                case STUDENT:
+                    System.out.println("The person Type is: " + Person.STUDENT);
+                    break;
+                case PROFESSOR:
+                    System.out.println("The person Type is: " + Person.PROFESSOR);
+                    break;
+                case ADMIN:
+                    System.out.println("The person Type is: " + Person.ADMIN);
+                    break;
+                case INSTRUCTOR:
+                    System.out.println("The person Type is: " + Person.INSTRUCTOR);
+                    break;
+                case TA:
+                    System.out.println("The person Type is: " + Person.TA);
+                    break;
             }
 
         }

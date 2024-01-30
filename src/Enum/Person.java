@@ -13,6 +13,10 @@ public enum Person {
     this.typeOfPerson=typeOfPerson;
     }
 
+    public String toString(){
+       return typeOfPerson;
+    }
+
     public static void showMembers(){
         for (Person eachPerson:Person.values()) {
             System.out.println(eachPerson);
